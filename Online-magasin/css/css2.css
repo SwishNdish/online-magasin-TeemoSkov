@@ -1,0 +1,221 @@
+/* FØLGENDE SEKTION, script til headeren*/
+.header {
+  background-color: #c0c5ce;
+  font-family: 'Comic Sans MS';
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 2%; /* Juster padding */
+  box-sizing: border-box;
+  justify-content: space-between;
+  position: fixed; /* Fixed position, så Headeren bliver selvom man scroller */
+  top: 0; /* Udfylder baggrundsfarve, i toppen */
+  left: 0; /* Udfylder baggrundsfarve til venstre */
+  z-index: 1000; /* Ensure the header appears above other content */
+}
+
+.align-left {
+  margin-left: 0%; /* Juster skriftens placering til venstre */
+  color: white;
+ font-size: 40px;
+ font-weight: bold;
+ font-weight: 600;
+}
+
+.align-right {
+  margin-right: 2%; /* Juster skriftens placering til højre */
+}
+.button {  
+  background-color: #838487;
+  color: white;
+  padding: 20px;
+  border-radius: 30px; /* juster hjørnerne til rundinger */
+  }
+.buttonn {
+  background-color:  #838487;
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
+  }
+
+  .buttonnn {
+    background-color:  #838487;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    }
+.button:hover {
+  background-color: #C47819;
+}
+.buttonn:hover {
+  background-color: #C47819;
+}
+.buttonnn:hover {
+  background-color: #C47819;
+}
+
+  .logo-link {
+    text-decoration: none; /* Fjerner understregningen, så logo'et ikke ligner et link */
+    color: inherit; /* Undgå at farven ændrer sig når man trykker på logo'et */
+    
+    }
+
+
+    .dropdown {
+      position: relative;
+       display: inline-block;
+      }
+   
+   .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #838487;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1000;
+        padding: 20px;
+        border-radius: 30px;
+      }
+      
+  .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+   
+  .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+   .dropdown:hover .button {
+        background-color: #C47819;
+      }
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+  --tekstfarv: rgb(50, 50, 50);
+}
+
+.Overskrift {
+  display: flex;
+  font-size: 150px; /* font størrelse */
+  font-family: "brittanic bold"; /* font */
+  color: rgb(156, 155, 155); /* farve */
+  line-height: 1.281; /* linje højde */
+  justify-content: center; /* centrer teksten po siden */
+  position: relative;
+  margin-top: 10vh; /* gør so teksten kan overlappe baggrund */
+   /* rykker teksten længere til højre */
+   /* hvor langt teksten er fra toppen */
+  z-index: 4;
+  max-height: 5px;
+}
+
+body, html {
+  width: 100%;
+  height: 10vh;
+  font-family: Arial, sans-serif;
+  /* fjerner margins der var i kanten */
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+
+.logo img {
+  width: 230px; /* logo størrelse */
+  height: auto;
+}
+
+/* nav menu star vandret */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 50px;
+  position: relative;
+}
+
+/* stilen på nav menuen */
+nav ul li a {
+  color: #c0c5ce;
+  text-decoration: none;
+  font-size: 25px;
+  transition: color 0.3s ease;
+  font-family:britannic bold ;
+}
+
+nav ul li:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff00;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+  padding-left: 0px;
+}
+
+.submenu li {
+  margin: 0;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 30px;
+}  
+
+article {
+  margin-top: 600px; /* Adds space between the header image and the article */
+  padding: 30px; /* Adds padding inside the article for better readability */
+  background-color: rgb(247, 247, 247); /* Sets the article background color */
+  color: black; /* Sets the text color for the article */
+  max-width: 800px; /* Sets a max width for the article content */
+  margin-left: auto; /* Centers the article block horizontally */
+  margin-right: auto;
+}
+
+article h1 {
+  font-size: 3.6rem;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.15em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+article p {
+  font-size: 25px; /* Sets the font size for the paragraph text */
+  font-family: 'Times New Roman';
+  letter-spacing: 1px;
+  line-height: 35px;
+  color: var(--tekstfarv);
+}
+
+h2{  
+  font-size: 55px;
+  text-align: center;
+  color: black;
+}
+
+h3{
+  font-size: 40px;
+  color: var(--tekstfarv);
+  padding-top: 35px;
+}
+

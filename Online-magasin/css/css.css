@@ -1,0 +1,355 @@
+/* FØLGENDE SEKTION, script til headeren*/
+.header {
+  background-color: #c0c5ce;
+  font-family: 'Comic Sans MS';
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 2%; /* Juster padding */
+  box-sizing: border-box;
+  justify-content: space-between;
+  position: fixed; /* Fixed position, så Headeren bliver selvom man scroller */
+  top: 0; /* Udfylder baggrundsfarve, i toppen */
+  left: 0; /* Udfylder baggrundsfarve til venstre */
+  z-index: 1000; /* Ensure the header appears above other content */
+}
+
+.align-left {
+  margin-left: 0%; /* Juster skriftens placering til venstre */
+  color: white;
+ font-size: 40px;
+ font-weight: bold;
+ font-weight: 600;
+}
+
+.align-right {
+  margin-right: 2%; /* Juster skriftens placering til højre */
+}
+.button {  
+  background-color: #838487;
+  color: white;
+  padding: 20px;
+  border-radius: 30px; /* juster hjørnerne til rundinger */
+  }
+.buttonn {
+  background-color:  #838487;
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
+  }
+
+  .buttonnn {
+    background-color:  #838487;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    }
+.button:hover {
+  background-color: #C47819;
+}
+.buttonn:hover {
+  background-color: #C47819;
+}
+.buttonnn:hover {
+  background-color: #C47819;
+}
+
+  .logo-link {
+    text-decoration: none; /* Fjerner understregningen, så logo'et ikke ligner et link */
+    color: inherit; /* Undgå at farven ændrer sig når man trykker på logo'et */
+    
+    }
+
+  
+ .dropdown {
+    position: relative;
+     display: inline-block;
+    }
+ 
+ .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #838487;
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      z-index: 1000;
+      padding: 20px;
+      border-radius: 30px;
+    }
+    
+.dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+ 
+.dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+ .dropdown:hover .button {
+      background-color: #C47819;
+    }
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+  
+/* Define variables in the :root */
+
+
+.containerr {
+ padding:0%;
+}
+
+.slider-wrapper {
+ position: relative;
+ max-width:100%;
+ margin:0 auto;
+}
+
+.slider {
+ display: flex;
+ aspect-ratio: 16/9;
+ overflow-x: auto;
+ scroll-snap-type: x mandatory;
+ scroll-behavior: smooth;
+ box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+ border-radius: 0rem;
+}
+
+.slider img {
+ flex: 1 0 100%;
+ scroll-snap-align: start;
+ object-fit: cover;
+}
+
+.slider-nav {
+ display: flex;
+ column-gap: 1rem;
+ position: absolute;
+ bottom: 1.25rem;
+ left: 50%;
+ transform: translatex(-50%);
+ z-index: 1;
+}
+
+.slider-nav a {
+ width: 0.5rem;
+ height: 0.5rem;
+ border-radius: 50%;
+ background-color: #ffffff;
+ opacity: 0.75;
+ transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+ opacity: 1;
+}
+
+.slider::-webkit-scrollbar {
+ display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*Følgende sektion!! Script til sign-up sektionen*/
+/* Reset default browser styles */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e9eaec;
+}
+
+.wireframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.signup-form {
+  background-color: #838487;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px; /* Set max-width to limit the width of the sign-up form */
+  display: inline-block; /* Display as inline-block to only take the necessary space */
+}
+
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #838487;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #C47819;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #7f5016;
+}
+
+/*Følgende sektion!! Script til footeren*/
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: #ffffff;
+  color: #000; /* Set text color to black */
+  padding: 40px 0;
+}
+
+.social-media-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.social-media-text, .footer-section h3, .footer-section p {
+  color: #C47819(6, 147, 227); /* Same color as titles */
+  font-family: 'Comic Sans MS'; /* Change font family */
+  font-weight: bold; /* Set bold font weight */
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-media a {
+  margin-right: 25px;
+}
+
+.social-media a img {
+  width: 30px; /* Adjust the size of the social media icons */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: f; /* Vertically align items to the top */
+  margin-left: 5px; /* Add margin to move content to the right */
+  
+}
+
+.footer-section {
+  width: calc(30% - 10px); /* Adjust width to fit closer together with margin */
+  margin-right: 10px; /* Add margin between sections */
+}
+
+.footer-section:last-child {
+  margin-right: 0; /* Remove margin from last section */
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000; /* Set text color to black */
+}
+
+.logo {
+  flex: 1; /* Flexible space */
+  text-align: right; /* Align logo to the right */
+  margin-right: 20px; /* Adjust margin to move the logo slightly to the left */
+}
+
+.logo img {
+  width: 80px; /* Adjust the width as needed */
+}
+
+.blue-square {
+  width: 100%;
+  background-color: #838487; /*  */
+  padding: 40px 20px; /* Adjust padding to push text a bit to the left */
+  text-align: left;
+  color: #C47819; /* White text color */
+  font-size: 40px;
+  line-height: 1.6;
+  font-family: 'Comic Sans MS'; /* Change font family */
+  font-weight: bold; /* Set bold font weight */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blue-square p {
+  margin-bottom: 20px;
+}
+
+.botton {
+  background-color: #C47819;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: 'Comic Sans MS';
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px; /* Make the edges of the button more round */
+  transition: background-color 0.3s ease;
+}
+
+
+
+.mellem-header {
+  width: 100%;
+  background-color:#c0c5ce;
+  color: #F9910F;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: 'Comic Sans MS';
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+
+
+
